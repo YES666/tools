@@ -1,0 +1,9 @@
+import numpy as np
+
+#打乱numpy数组
+def shuffle_data(data,label,num):
+    index = np.arange(num)
+    np.random.shuffle(index)
+    data= data[index]
+    label = label[index]
+    return data,label
